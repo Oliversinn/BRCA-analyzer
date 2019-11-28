@@ -372,9 +372,9 @@ for i in range(ws.nrows)[1:]:
     else:
         qual=lang['QualMod']; qualColor=RGBColor(255,78,0)
         varsForCheck.append(str(i+rowNum))
-    if 'empty' in row[1]:
-        varsForCheck.pop()
-        comment=lang['Contamination']+'!'; commentColor=RGBColor(255,0,0)
+    #if 'empty' in row[1]:
+    #    varsForCheck.pop()
+    #    comment=lang['Contamination']+'!'; commentColor=RGBColor(255,0,0)
     clinReasons=[]
     if 'Pathogenic' in row[27]: clinReasons.append('ClinVar')
     if 'yes' in row[25]: clinReasons.append('BIC')

@@ -1,0 +1,17 @@
+# The following table is formatted as tab separated values. 
+#GeneName	GeneId	TranscriptId	BioType	variants_impact_HIGH	variants_impact_LOW	variants_impact_MODERATE	variants_impact_MODIFIER	variants_effect_3_prime_UTR_variant	variants_effect_5_prime_UTR_variant	variants_effect_downstream_gene_variant	variants_effect_intron_variant	variants_effect_missense_variant	variants_effect_non_coding_transcript_exon_variant	variants_effect_splice_region_variant	variants_effect_stop_gained	variants_effect_structural_interaction_variant	variants_effect_synonymous_variant	variants_effect_upstream_gene_variant
+BRCA1	BRCA1	NM_007294.3	protein_coding	2	4	7	54	0	0	0	53	7	0	1	0	2	3	2
+BRCA1	BRCA1	NM_007297.3	protein_coding	0	4	7	54	0	0	0	53	7	0	1	0	0	3	2
+BRCA1	BRCA1	NM_007298.3	protein_coding	0	2	2	61	0	0	0	58	2	0	1	0	0	1	4
+BRCA1	BRCA1	NM_007299.3	protein_coding	0	2	1	62	0	0	0	61	1	0	1	0	0	1	2
+BRCA1	BRCA1	NM_007300.3	protein_coding	0	4	7	54	0	0	0	53	7	0	1	0	0	3	2
+BRCA1	BRCA1	NR_027676.1		0	1	0	64	0	0	0	51	0	12	1	0	0	0	2
+BRCA2	BRCA2	NM_000059.3	protein_coding	1	9	20	53	1	1	0	52	20	0	1	1	0	8	0
+N4BP2L1	N4BP2L1	NM_001079691.1	protein_coding	0	0	0	6	0	0	6	0	0	0	0	0	0	0	0
+N4BP2L1	N4BP2L1	NM_001286459.1	protein_coding	0	0	0	6	0	0	6	0	0	0	0	0	0	0	0
+N4BP2L1	N4BP2L1	NM_001286460.1	protein_coding	0	0	0	6	0	0	6	0	0	0	0	0	0	0	0
+N4BP2L1	N4BP2L1	NM_001286461.1	protein_coding	0	0	0	6	0	0	6	0	0	0	0	0	0	0	0
+N4BP2L1	N4BP2L1	NM_052818.2	protein_coding	0	0	0	6	0	0	6	0	0	0	0	0	0	0	0
+NBR2	NBR2	NR_003108.2		0	0	0	6	0	0	0	0	0	0	0	0	0	0	6
+NBR2	NBR2	NR_138145.1		0	0	0	6	0	0	0	0	0	0	0	0	0	0	6
+ZAR1L	ZAR1L	NM_001136571.1	protein_coding	0	0	0	4	0	0	0	0	0	0	0	0	0	0	4

@@ -32,7 +32,7 @@ def removeFiles(files):
             os.remove(d)
 
 def processPatient(inputArgs):
-    varCaller='pisces'
+    varCaller='unifiedGenotyper'
     readsFile1=inputArgs[0]
     readsFile2=inputArgs[1]
     outDir=inputArgs[2]
@@ -416,7 +416,7 @@ logger.info('Arguments used:\n')
 for arg in vars(args):
     logger.info(str(arg)+' '+str(getattr(args,arg)))
     
-varCaller='pisces'
+varCaller='unifiedGenotyper'
 if varCaller=='pisces':
     varCaller='genome'
 langs=['russian','english']
@@ -728,22 +728,23 @@ if args.primersCoords:
                            '-lang '+args.lang,shell=True,stderr=sp.STDOUT)
     print('Done')
     logger.info('Done')
-print('Creating report...')
-logger.info('Creating report...')
-if args.primersCoords:
-    output=sp.check_output('python3 '+thisDir+'makeReport.py '
-                            '-read '+outDir+args.runName+'.reads_statistics.xls '
-                           '-cov '+outDir+args.runName+'_amplicon_coverage_mean.xls '
-                           '-res '+outDir+'allPatients.'+args.runName+'.'+varCaller+'.ann.avinput.ann.hg19_multianno.withOurCoordinates.clinical.excel.xls '
-                           '-fig '+outDir+args.runName+'_amplicon_coverage_mean.uniformity.png '
-                           '-out '+outDir+args.runName+'.report.docx '
-                           '-lang '+args.lang,shell=True,stderr=sp.STDOUT)
-else:
-    output=sp.check_output('python3 '+thisDir+'makeReport.py '
-                            '-read '+outDir+args.runName+'.reads_statistics.xls '
-                           '-res '+outDir+'allPatients.'+args.runName+'.'+varCaller+'.ann.avinput.ann.hg19_multianno.withOurCoordinates.clinical.excel.xls '
-                           '-out '+outDir+args.runName+'.report.docx '
-                           '-lang '+args.lang,shell=True,stderr=sp.STDOUT)
-print('Done')
-logger.info('Done')
+#print('Creating report...')
+#logger.info('Creating report...')
+#if args.primersCoords:
+#    output=sp.check_output('python3 '+thisDir+'makeReport.py '
+#                            '-read '+outDir+args.runName+'.reads_statistics.xls '
+#                           '-cov '+outDir+args.runName+'_amplicon_coverage_mean.xls '
+#                           '-res '+outDir+'allPatients.'+args.runName+'.'+varCaller+'.ann.avinput.ann.hg19_multianno.withOurCoordinates.clinical.excel.xls '
+#                           '-fig '+outDir+args.runName+'_amplicon_coverage_mean.uniformity.png '
+#                           '-out '+outDir+args.runName+'.report.docx '
+#                           '-lang '+args.lang,shell=True,stderr=sp.STDOUT)
+#else:
+#    output=sp.check_output('python3 '+thisDir+'makeReport.py '
+#                            '-read '+outDir+args.runName+'.reads_statistics.xls '
+#                           '-res '+outDir+'allPatients.'+args.runName+'.'+varCaller+'.ann.avinput.ann.hg19_multianno.withOurCoordinates.clinical.excel.xls '
+#                           '-out '+outDir+args.runName+'.report.docx '
+#                           '-lang '+args.lang,shell=True,stderr=sp.STDOUT)
+#print('Done')
+#logger.info('Done')
+
 
